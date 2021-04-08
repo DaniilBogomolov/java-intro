@@ -18,8 +18,11 @@ public class Main {
 
         user1.setCanOrder(false);
         System.out.println(user.isCanOrder());
-
         System.out.println(User.isCanOrder());
+
+        System.out.println("---------");
+        System.out.println("12".compareTo("2"));
+        System.out.println("---------");
 
 //        phone.selfTest();
 //        System.out.println(phone);
