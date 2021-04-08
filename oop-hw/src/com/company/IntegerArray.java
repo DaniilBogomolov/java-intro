@@ -1,13 +1,15 @@
 package com.company;
 
-public interface IntegerArray {
-    void add(int element);
-    void addAll(int[] elements);
+import java.util.Comparator;
+
+public interface IntegerArray<T> {
+    void add(T element);
+    void addAll(T[] elements);
     void remove(int index);
-    int get(int index);
-    int indexOf(int element); // если отсортирован -> бинарным поиском
+    T get(int index);
+    int indexOf(T element); // если отсортирован -> бинарным поиском
     int length();
     void reverse();
-    void sort();
+    void sort(Comparator<T> comparator);
     void print();
 }
